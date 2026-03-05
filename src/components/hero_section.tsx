@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import hero from '../assets/hero.png'
 
 const HeroSection: React.FC = () => {
   const socials = [
-    { icon: <FaGithub />, link: "https://github.com/your-username" },
-    { icon: <FaLinkedinIn />, link: "https://linkedin.com/in/your-username" },
-    { icon: <FaFacebookF />, link: "#" },
-    { icon: <FaInstagram />, link: "#" },
+    { icon: <FaGithub />, link: "https://github.com/Dineth0" },
+    { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/dineth-nakandala-2b8aa42b4/" },
+    { icon: <FaFacebookF />, link: "https://www.facebook.com/dineth.nakandala" },
+    { icon: <FaInstagram />, link: "https://www.instagram.com/dinethnakandala/" },
     { icon: <FaTwitter />, link: "#" },
   ];
 
@@ -27,7 +28,7 @@ const HeroSection: React.FC = () => {
             Hi, I'm <span className="text-yellow-400">Dineth</span>
           </h1>
           <h2 className="text-xl md:text-3xl text-gray-400 font-light mb-10">
-            Full Stack Developer & UI Designer
+            Full Stack Developer
           </h2>
 
           <div className="flex space-x-4">
@@ -57,7 +58,7 @@ const HeroSection: React.FC = () => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <img 
-              src="../assets/react.svg" 
+              src={hero}
               alt="Dineth Profile" 
               className="relative w-72 md:w-[400px] object-cover drop-shadow-2xl"
             />
