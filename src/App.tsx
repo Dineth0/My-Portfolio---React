@@ -3,6 +3,7 @@ import AboutSection from './components/about_section'
 import EducationSection from './components/education_section'
 import Header from './components/header'
 import HeroSection from './components/hero_section'
+import SkillsSection from './components/skills_section'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <HeroSection />
         <AboutSection/>
         <EducationSection/>
+        <SkillsSection/>
       </main>
 
     </div>
