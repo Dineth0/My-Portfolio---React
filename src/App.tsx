@@ -1,5 +1,6 @@
 import './App.css'
 import AboutSection from './components/about_section'
+import EducationSection from './components/education_section'
 import Header from './components/header'
 import HeroSection from './components/hero_section'
 
@@ -12,6 +13,7 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection/>
+        <EducationSection/>
       </main>
 
     </div>
