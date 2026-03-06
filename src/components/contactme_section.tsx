@@ -5,7 +5,7 @@ import { MdEmail, MdPhone, MdLocationOn, MdPerson } from 'react-icons/md';
 
 const ContactSection: React.FC = () => {
   return (
-    <section id="contact" className="py-16 bg-[#080808] text-white px-6">
+    <section id="contact" className="py-16 bg-[#1a1a1a] text-white px-6">
       <div className="max-w-5xl mx-auto">
         
         <div className="text-center mb-12">

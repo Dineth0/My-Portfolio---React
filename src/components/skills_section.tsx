@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Images Import
 import javaImg from '../assets/java.png';
 import mysqlImg from '../assets/mysql.png';
 import javafxImg from '../assets/JavaFX.png';
@@ -29,7 +28,6 @@ import render from '../assets/render.png';
 import express from '../assets/express.png';
 
 
-// Skills Category වලට වෙන් කරමු
 const skillCategories = [
   {
     title: "Frontend Development",
@@ -86,12 +84,10 @@ const skillCategories = [
 
 const SkillsSection: React.FC = () => {
   return (
-    // Section padding අඩු කළා (py-24 -> py-16)
-    <section id="skills" className="py-16 bg-[#080808] text-white px-6">
-      <div className="max-w-6xl mx-auto"> {/* Max width එකත් පොඩ්ඩක් අඩු කළා */}
+    <section id="skills" className="py-16 bg-[#1a1a1a] text-white px-6">
+      <div className="max-w-6xl mx-auto"> 
         
-        {/* Section Header */}
-        <div className="text-center mb-12"> {/* Margin අඩු කළා (mb-20 -> mb-12) */}
+        <div className="text-center mb-12"> 
           <motion.h2 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -100,19 +96,18 @@ const SkillsSection: React.FC = () => {
             My <span className="text-yellow-400">Tech Stack</span>
           </motion.h2>
           <div className="w-16 h-1 bg-yellow-400 mx-auto rounded-full mb-4"></div>
-          <p className="text-gray-400 max-w-xl mx-auto text-sm font-light"> {/* Font size & max-width අඩු කළා */}
+          <p className="text-gray-400 max-w-xl mx-auto text-sm font-light"> 
             Technology stack and tools I use to build modern applications.
           </p>
         </div>
 
-        {/* Categories Loop */}
-        <div className="space-y-10"> {/* Category අතර පරතරය අඩු කළා (space-y-20 -> space-y-10) */}
+        <div className="space-y-10"> 
           {skillCategories.map((category, catIndex) => (
             <div key={catIndex}>
               <motion.div 
                 initial={{ opacity: 0, x: -15 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                className="flex items-center space-x-3 mb-6" // Margin අඩු කළා
+                className="flex items-center space-x-3 mb-6" 
               >
                 <h3 className="text-lg font-semibold text-gray-200 uppercase tracking-widest">
                   {category.title}
@@ -120,7 +115,6 @@ const SkillsSection: React.FC = () => {
                 <div className="flex-grow h-[1px] bg-gradient-to-r from-yellow-400/30 to-transparent"></div>
               </motion.div>
 
-              {/* Grid gap අඩු කළා (gap-8 -> gap-4) */}
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4">
                 {category.skills.map((skill, index) => (
                   <motion.div
@@ -129,12 +123,9 @@ const SkillsSection: React.FC = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     whileHover={{ y: -5 }}
                     className="relative group bg-[#111] border border-white/5 p-4 rounded-2xl flex flex-col items-center justify-center transition-all duration-300" 
-                    // Padding (p-8 -> p-4) සහ rounded corners අඩු කළා
                   >
-                    {/* Hover Glow - Soft කළා */}
                     <div className="absolute -inset-0.5 bg-yellow-400/10 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
                     
-                    {/* Icon size අඩු කළා (w-14 -> w-10) */}
                     <div className="relative z-10 w-10 h-10 mb-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                       <img src={skill.img} alt={skill.name} className="max-w-full max-h-full object-contain" />
                     </div>

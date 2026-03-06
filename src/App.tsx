@@ -2,6 +2,7 @@ import './App.css'
 import AboutSection from './components/about_section'
 import ContactSection from './components/contactme_section'
 import EducationSection from './components/education_section'
+import Footer from './components/footer'
 import Header from './components/header'
 import HeroSection from './components/hero_section'
 import ProjectSection from './components/project_section'
@@ -20,6 +21,7 @@ function App() {
         <SkillsSection/>
         <ProjectSection/>
         <ContactSection/>
+        <Footer/>
       </main>
 
     </div>
