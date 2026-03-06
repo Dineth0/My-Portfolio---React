@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import hero from '../assets/hero.png'
+import hero from '../assets/hero.png';
 
 const HeroSection: React.FC = () => {
   const socials = [
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[#0a0a0a] text-white pt-20 px-6 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-[#080808] text-white pt-20 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         <motion.div 
@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
           <span className="text-yellow-400 font-semibold tracking-[0.2em] text-sm uppercase mb-4 block">
             Welcome to my world
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
             Hi, I'm <span className="text-yellow-400">Dineth</span>
           </h1>
           <h2 className="text-xl md:text-3xl text-gray-400 font-light mb-10">
@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ y: -5, scale: 1.1 }}
-                className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1a1a1a] border border-white/10 text-yellow-400 text-xl hover:bg-yellow-400 hover:text-black transition-all duration-300 shadow-lg shadow-black/50"
+                className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-gray-400 text-xl hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition-all duration-300 shadow-lg shadow-black/50"
               >
                 {item.icon}
               </motion.a>
@@ -48,20 +48,24 @@ const HeroSection: React.FC = () => {
         </motion.div>
 
         <motion.div 
-          className="relative flex justify-center items-center"
+          className="relative flex justify-center items-center mt-10 md:mt-0"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="absolute w-[300px] h-[300px] bg-yellow-500/10 rounded-full blur-[100px]"></div>
-          
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-            <img 
-              src={hero}
-              alt="Dineth Profile" 
-              className="relative w-72 md:w-[400px] object-cover drop-shadow-2xl"
-            />
+            <div className="absolute inset-0 bg-yellow-400/20 rounded-full blur-[80px] group-hover:bg-yellow-400/40 transition-all duration-700 scale-110 -z-10"></div>
+            
+            <div className="absolute -inset-4 border border-white/5 rounded-full group-hover:border-yellow-400/30 transition-all duration-700 animate-pulse"></div>
+
+            <div className="relative w-72 h-72 md:w-[420px] md:h-[420px] rounded-full overflow-hidden border-4 border-white/10 group-hover:border-yellow-400 transition-colors duration-500 bg-[#111] shadow-2xl z-10">
+              <img 
+                src={hero}
+                alt="Dineth Profile" 
+                className="w-full h-full object-cover object-top md:object-center group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+            </div>
           </div>
         </motion.div>
 
