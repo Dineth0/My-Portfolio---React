@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import hero from '../assets/hero.png';
+import hero from '../assets/osa.png';
 
 const HeroSection: React.FC = () => {
   const socials = [
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[#080808] text-white pt-20 px-6 overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-[#080808] text-white pt-20 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         <motion.div 

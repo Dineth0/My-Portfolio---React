@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-bold mb-6 text-[10px] uppercase tracking-[0.3em] opacity-50">Sitemap</h4>
             <ul className="space-y-3 text-gray-300 text-sm font-semibold">
               <li><a href="#home" className="hover:text-yellow-400 transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-yellow-400 transition-colors">About</a></li>
-              <li><a href="#projects" className="hover:text-yellow-400 transition-colors">Works</a></li>
-              <li><a href="#contact" className="hover:text-yellow-400 transition-colors">Contact</a></li>
+              <li><a href="#aboutme" className="hover:text-yellow-400 transition-colors">About</a></li>
+              <li><a href="#myworks" className="hover:text-yellow-400 transition-colors">Works</a></li>
+              <li><a href="#contactme" className="hover:text-yellow-400 transition-colors">Contact</a></li>
             </ul>
           </div>
 

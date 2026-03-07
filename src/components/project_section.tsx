@@ -62,7 +62,7 @@ const projects = [
 
 const ProjectSection: React.FC = () => {
   return (
-    <section id="projects" className="py-12 bg-[#080808] text-white px-6">
+    <section id="myworks" className="py-12 bg-[#080808] text-white px-6">
       <div className="max-w-5xl mx-auto">
         
         <div className="text-center mb-16">
