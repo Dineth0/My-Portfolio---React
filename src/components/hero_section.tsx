@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram, FaDownload } from 'react-icons/fa'; 
 import hero from '../assets/osa.png';
+import myCV from '../assets/Dineth_Nakandala_CV.pdf';
 
 const HeroSection: React.FC = () => {
   const socials = [
@@ -30,19 +31,32 @@ const HeroSection: React.FC = () => {
             Full Stack Developer
           </h2>
 
-          <div className="flex space-x-4">
-            {socials.map((item, index) => (
-              <motion.a 
-                key={index}
-                href={item.link}
-                target="_blank"
-                rel="noreferrer"
-                whileHover={{ y: -5, scale: 1.1 }}
-                className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-gray-400 text-xl hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition-all duration-300 shadow-lg shadow-black/50"
-              >
-                {item.icon}
-              </motion.a>
-            ))}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            
+            <motion.a 
+              href={myCV}
+              download="Dineth_Nakandala_CV.pdf" 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-3 bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold uppercase text-sm tracking-widest hover:bg-yellow-500 transition-all shadow-lg shadow-yellow-400/10"
+            >
+              <FaDownload size={16} /> Download CV
+            </motion.a>
+
+            <div className="flex space-x-4">
+              {socials.map((item, index) => (
+                <motion.a 
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  whileHover={{ y: -5, scale: 1.1 }}
+                  className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-gray-400 text-xl hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition-all duration-300 shadow-lg shadow-black/50"
+                >
+                  {item.icon}
+                </motion.a>
+              ))}
+            </div>
           </div>
         </motion.div>
 
@@ -54,9 +68,7 @@ const HeroSection: React.FC = () => {
         >
           <div className="relative group">
             <div className="absolute inset-0 bg-yellow-400/20 rounded-full blur-[80px] group-hover:bg-yellow-400/40 transition-all duration-700 scale-110 -z-10"></div>
-            
             <div className="absolute -inset-4 border border-white/5 rounded-full group-hover:border-yellow-400/30 transition-all duration-700 animate-pulse"></div>
-
             <div className="relative w-72 h-72 md:w-[420px] md:h-[420px] rounded-full overflow-hidden border-4 border-white/10 group-hover:border-yellow-400 transition-colors duration-500 bg-[#111] shadow-2xl z-10">
               <img 
                 src={hero}
