@@ -48,8 +48,7 @@ const AboutSection: React.FC = () => {
             </h3>
             
             <p className="text-gray-400 leading-relaxed mb-8 text-lg">
-              I am a 23-year-old passionate developer currently pursuing a 
-              <span className="text-white font-medium"> Graduate Diploma in Software Engineering at IJSE</span>. 
+              I am a 24-year-old Passionate Software Engineering undergraduate at IJSE with hands-on experience in building full-stack web applications.
               My ultimate goal is to excel as a Full Stack Developer in the tech industry. 
               I am always eager to learn and integrate the latest technologies into my projects to build 
               efficient and modern solutions.
