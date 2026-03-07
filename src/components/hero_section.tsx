@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import hero from '../assets/osa.png';
 
 const HeroSection: React.FC = () => {
@@ -9,7 +9,6 @@ const HeroSection: React.FC = () => {
     { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/dineth-nakandala-2b8aa42b4/" },
     { icon: <FaFacebookF />, link: "https://www.facebook.com/dineth.nakandala" },
     { icon: <FaInstagram />, link: "https://www.instagram.com/dinethnakandala/" },
-    { icon: <FaTwitter />, link: "#" },
   ];
 
   return (

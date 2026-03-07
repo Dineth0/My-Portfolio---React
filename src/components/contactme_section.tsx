@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaFacebook, FaLinkedin, FaInstagram, FaMedium, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaFacebook, FaLinkedin, FaInstagram, FaMedium } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationOn, MdPerson } from 'react-icons/md';
 
 const ContactSection: React.FC = () => {
@@ -76,7 +76,6 @@ const ContactSection: React.FC = () => {
                 { icon: <FaFacebook />, link: "https://www.facebook.com/dineth.nakandala" },
                 { icon: <FaInstagram />, link: "https://www.instagram.com/dinethnakandala/" },
                 { icon: <FaMedium />, link: "https://medium.com/@dinethnakandala10" },
-                { icon: <FaTwitter />, link: "https://x.com/DinethNakandala" }
               ].map((social, idx) => (
                 <a 
                   key={idx}
