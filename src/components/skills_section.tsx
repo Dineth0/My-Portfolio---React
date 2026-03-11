@@ -91,7 +91,7 @@ const SkillsSection: React.FC = () => {
           <motion.h2 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl md:text-4xl font-bold text-white mb-3" // Font size අඩු කළා
+            className="text-3xl md:text-4xl font-bold text-white mb-3" 
           >
             My <span className="text-yellow-400">Tech Stack</span>
           </motion.h2>
