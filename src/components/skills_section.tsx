@@ -26,6 +26,7 @@ import typescript from '../assets/ts.png';
 import swagger from '../assets/swagger.png';
 import render from '../assets/render.png';
 import express from '../assets/express.png';
+import nextjs from '../assets/nextjs.png'
 
 
 const skillCategories = [
@@ -36,6 +37,7 @@ const skillCategories = [
       { name: "CSS", img: cssImg },
       { name: "JavaScript", img: jsImg },
       { name: "TypeScript", img: typescript },
+      { name: "Next JS", img: nextjs},
       { name: "React", img: react },
       { name: "React Native", img: RNative },
     ]

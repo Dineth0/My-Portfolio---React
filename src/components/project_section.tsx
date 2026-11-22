@@ -8,8 +8,51 @@ import serenityImg from '../assets/serenity.png';
 import tradyImg from '../assets/treditional.png';
 import foodieImg from '../assets/food.png';
 import FansImg from '../assets/fans11.png';
+import WaterImg from '../assets/water.png'
+import AgroImg from '../assets/Agro.png'
 
 const projects = [
+  
+  {
+    title: "DON Foodie",
+    category: "Web Application",
+    description: "A recipe discovery and meal planning platform for food enthusiasts.",
+    image: foodieImg,
+    github: "https://github.com/Dineth0/FoodRecipies-React",
+    tags: ["React","Typescript", "ExpressJs" ,"Tailwind CSS","Redux","Mongo DB"]
+  },
+  {
+    title: "Water Potability Prediction System",
+    category: "Web Application",
+    description: "Developed a Machine Learning-based web application to predict whether water is Potable or Not Potable based on nine physical and chemical water-quality parameters.",
+    image: WaterImg,
+    github: "https://github.com/Dineth0/ML-Final-Project",
+    tags: ["Python","Machine Learning", "React"]
+  },
+  {
+    title: "Automated Greenhouse Management System",
+    category: "Backend",
+    description: "Designed a microservices-based greenhouse management system for zone management, sensor telemetry, automation and control, and crop inventory. ",
+    image: AgroImg,
+    github: "https://github.com/Dineth0/Greenhouse-Management-System-MicroService",
+    tags: [" Spring Boot"," PostgreSQL", "External IoT API"]
+  },
+  {
+    title: "FANS 11",
+    category: "Mobile Application",
+    description: "A sports-centric mobile app built for fan engagement and updates.",
+    image: FansImg,
+    github: "https://github.com/Dineth0/Fans11-MobileApp",
+    tags: ["React Native","Nativewind", "Firebase"]
+  },
+  {
+    title: "Sri Lankan Traditional Experience",
+    category: "Web Application",
+    description: "Showcasing Sri Lankan heritage with a modern web interface.",
+    image: tradyImg,
+    github: "https://github.com/Dineth0/TraditionalExperience-SpringBoot",
+    tags: ["SpringBoot","JavaScript", "Html" ,"CSS"]
+  },
   {
     title: "Labor Management",
     category: "Enterprise System",
@@ -34,30 +77,8 @@ const projects = [
     github: "https://github.com/Dineth0/tictacteo_game",
     tags: ["Java", "JavaFX"]
   },
-  {
-    title: "Sri Lankan Traditional Experience",
-    category: "Web Application",
-    description: "Showcasing Sri Lankan heritage with a modern web interface.",
-    image: tradyImg,
-    github: "https://github.com/Dineth0/TraditionalExperience-SpringBoot",
-    tags: ["SpringBoot","JavaScript", "Html" ,"CSS"]
-  },
-  {
-    title: "DON Foodie",
-    category: "Web Application",
-    description: "A recipe discovery and meal planning platform for food enthusiasts.",
-    image: foodieImg,
-    github: "https://github.com/Dineth0/FoodRecipies-React",
-    tags: ["React","Typescript", "ExpressJs" ,"Tailwind CSS","Redux","Mongo DB"]
-  },
-  {
-    title: "FANS 11",
-    category: "Mobile Application",
-    description: "A sports-centric mobile app built for fan engagement and updates.",
-    image: FansImg,
-    github: "https://github.com/Dineth0/Fans11-MobileApp",
-    tags: ["React Native","Nativewind", "Firebase"]
-  },
+  
+  
 ];
 
 const ProjectSection: React.FC = () => {
